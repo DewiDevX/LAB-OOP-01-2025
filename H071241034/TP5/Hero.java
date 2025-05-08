@@ -1,5 +1,5 @@
 // Superclass Hero
-public class Hero {
+public abstract class Hero {
     String name;
     int health, attackPower;
 
@@ -11,7 +11,5 @@ public class Hero {
     }
 
     // Method attack default (akan dioverride oleh subclass)
-    public void attack() {
-        System.out.println(name + " menyerang dengan kekuatan " + attackPower);
-    }
+    public abstract void attack();
 }
